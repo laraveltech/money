@@ -1,0 +1,46 @@
+{
+    "name": "laraveltech/money",
+    "description": "Laravel Money",
+    "keywords": [
+        "laravel",
+        "money",
+        "currency"
+    ],
+    "homepage": "https://github.com/laraveltech/money",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ivan Timofeev",
+            "email": "nighthtr@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "ext-json": "*",
+        "ext-intl": "*",
+        "illuminate/database": "^8.0",
+        "illuminate/support": "^8.0",
+        "moneyphp/money": "3.3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelTech\\Money\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelTech\\Money\\MoneyServiceProvider"
+            ]
+        }
+    }
+}
